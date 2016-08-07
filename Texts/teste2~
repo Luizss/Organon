@@ -1,0 +1,81 @@
+--- title title | authoer | asdasduansiduabsidfbaspd
+
+{enum 
+
+isso ai |
+asdasdasd| 
+asda\nsdasd|
+asdasdasdsa|
+thats is|
+{code haskell
+
+main = do
+  as <- getaargs
+  case as of
+    Hey a -> a
+    Wat a -> a
+}}
+
+{item
+
+isso ai |
+asdasdasd| 
+asda\nsdasd|
+asdasdasdsa|
+thats is|
+{code haskell
+main = do
+  as <- getaargs
+  case as of
+    Hey a -> a
+    Wat a -> a
+}|
+hahahhahaha}
+
+{desc 
+1 ;
+{n asdadasda
+   sdsdas
+   dsadasdasadasd} |
+      2 ; asdasdaasdasdadasdasdasdsdasdasd | 
+      3 ; asdasdasd |
+      3132123 ; asdasdasdsa |
+      5 ; thats is |
+      6 ; haskell code {codef haskell
+      main = do
+        as <- getaargs
+        case as of
+          Hey a -> a
+          Wat a -> a } |
+      7 ; hahahhahaha d f}
+
+
+{par asdasdiuaifiuasfd, asdasd, asdasd, asd ai | asdufnasidufnaisdnfiausdnfi}
+{par asdasdiuaifiuasfd ai | asdufnasidufnaisdnfiausdn
+asdfasdfasdf
+asdfasdfasd
+fasdf
+asd
+fa
+sdf
+as
+dfi}
+
+{imgl flowers.png width=10cm fig:hey dfunasdf sdfiu asd fo asdf}
+
+lalalallalalall {ref fig:hey}
+
+asdasda
+sfasdf
+asdf
+asdf
+
+{table [[{mc 4 c multicolumnss}],[1,2,3,4],[5,6,7,8]] ;label ; asdunaosidua sodya soid }
+
+{xtable [[{mc 4 c multicolumnss}],[1,2,3,4],[5,6,7,8]] ;label4 ; asdunaosidua sodya soid }
+
+{ltable 0.5 ; [[{mc 4 c multicolumnss}],[1,2,3,4],[5,6,7,8]] ;label3 ; asdunaosidua sodya soid }
+
+{ptable |clcl| ; [[{mc 4 c multicolumnss}],[1,2,3,4],[5,6,7,8]] ;label2 ; asdunaosidua sodya soid }
+
+heyehayf aduyf asdlfya sdfkha sfdy asçdkfy ad {ref label}

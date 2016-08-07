@@ -1,0 +1,13 @@
+Organization of Folders
+
+Programs/Execs  -> Executables *
+Programs        -> Source Codes
+External/Images -> Images
+External        -> Anything external needed to render file
+Knowledge       -> Organized topics
+Texts           -> Structure files (for prerender or render) *
+Topics          -> Topic files (for read) *
+Results/PDFs    -> PDF results
+Results         -> Results from render *
+
+* -> Program expects the right things to be in the specific places.

@@ -1,0 +1,41 @@
+@ieee:
+
+(abstract,appendices,beg)
+
+The format for IEEE scientific articles and Computer Association. Remember -br-tt-sc.
+
+@unb:
+
+(agradecimentos,autores,banca,capa,data,dedicatorias,grau,inicio,resumo,titulo)
+
+Formato para artigos padrão UNB/FT. Precisa de vários programas para que funcione. Remember -br-tt-sc.
+
+@presentation:
+
+(al-bloc,bloc,columns,ex-bloc,fframe,frame,ftframe,penum)
+
+Presentations with slides. Remember -br-tt-sc.
+
+@any:
+
+(bib,bibliography,bf,center,cite,code,codef,color,contents,desc,dots,enum,eqn,fontsize,hvec,imgc,imgcl,img,imgl,item,it,ltable,math,mathi,mat,mc,n,pageref,par,parindent,parskip,part,plot,ptable,quote,ref,rm,sc,section1,section,smallmat,styletitle,subsection1,subsection,table,title,tt,vec)
+
+Any format (or almost all). Remember -br-tt-sc.
+
+@book:
+
+(chapter)
+
+Book. Remember -br-tt-sc.
+
+@report:
+
+(chapter)
+
+Almost a book. But without same page behaviour (less blank pages). Remember -br-tt-sc.
+
+@letter:
+
+(closing,letter,opening)
+
+Letter. Needs some programs to make sure it displays ok. Remember -br-tt-sc.

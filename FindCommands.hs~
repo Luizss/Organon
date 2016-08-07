@@ -1,0 +1,75 @@
+module FindCommands where
+
+import Text.Parsec
+import Text.Parsec.Token
+import Text.Parsec.String
+import Data.Either
+import Prelude hiding (readFile)
+import Control.Applicative ((<$>),(<*>),Applicative)
+import Data.Char
+import Text.Printf
+import Data.Traversable hiding (mapM)
+import Data.Foldable hiding (concat,foldl1,foldl,and,elem,mapM_,or,find)
+import System.Console.Haskeline
+import System.Console.CmdArgs
+import qualified System.IO.Strict as Strict
+import System.Directory
+import System.Environment
+import Data.List hiding (find) --(isPrefixOf,findIndices,union)
+import System.FilePath.Find as F hiding (find)
+import Data.Maybe
+
+import Data
+import Helper
+import Find
+
+{- Auxiliar -}
+
+toText :: [(Topics,[(ID,Content)])] -> String
+toText found = intercalate "\n\n" $ map f found where
+  f (topics,idsAndConts) =
+    "-------> " ++ sayList topics ++ "\n\n"
+    ++ intercalate "\n\n" (map showIC idsAndConts)
+  showIC (id,cont) = 
+    "--- ID: " ++ show id ++ "\n\n"
+    ++ cont
+
+{-toBlocks :: [(Topics,[(ID,Content)])] -> Blocks
+toBlocks r = map Block $ mapFst (\id -> ["id:",show id]) r'
+  where r' :: [(ID,Content)]
+        r' = concat $ map snd r
+        mapFst f tups = map (\(a,b) -> (f a, b)) tups-}
+
+{- Finds -}
+
+findComm :: Topics -> IO ()
+findComm topics = do
+  found <- find topics
+  let text = toText found
+  if and (map isSpace text)
+    then putStrLn "No topics."
+    else putStrLn text
+
+findAllComm :: Topics -> IO ()
+findAllComm topics = do
+  found <- findAll topics
+  let text = toText found
+  if and (map isSpace text)
+    then putStrLn "No topics."
+    else putStrLn text
+
+findIdComm :: [String] -> IO ()
+findIdComm idsText = do
+  let ids = map read idsText :: [Integer]
+  found <- findID ids
+  let text = toTextID found
+  if and (map isSpace text)
+    then putStrLn "Nothing found."
+    else putStrLn text
+         
+toTextID :: [(Topics,ID,Content)] -> String
+toTextID = intercalate "\n\n" . map toText where
+  toText (topics,id,content) =
+    "------> ID: " ++ show id ++ "\n\n"
+    ++ "--- " ++ sayList topics ++ "\n\n"
+    ++ content

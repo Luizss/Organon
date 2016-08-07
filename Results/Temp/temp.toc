@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {brazilian}
+\beamer@sectionintoc {1}{Section}{2}{0}{1}
+\beamer@sectionintoc {2}{hey-now}{3}{0}{2}

@@ -1,0 +1,22 @@
+--- title Checking
+
+{par topicos, teste:
+| é isso aí {par asdasdasdasd asf as da sd asd }
+}
+
+{par outro, teste:
+| asdisnodifnaoisdnf
+asdfinaspufaídubfasdf
+adufbpaisubfásfd
+{code haskell
+
+main = do
+.
+.
+.
+}
+}
+
+{par outro, mais, algo:
+| asdasdasdamais alor outro
+}

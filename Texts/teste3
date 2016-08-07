@@ -1,0 +1,9 @@
+--- title Title
+
+--- section Section
+
+{getAll text hey-now new newa teste thatsit}
+
+{getID desc 40 4 5 6}
+
+{get sec hey-now}
